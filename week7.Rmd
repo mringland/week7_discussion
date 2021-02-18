@@ -1,0 +1,25 @@
+---
+title: "week 7 discussion"
+author: "Minnie Ringland"
+date: "2/18/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(palmerpenguins)
+```
+
+## Hi there
+
+
+make some plots
+```{r}
+ggplot(data=penguins, aes(x=body_mass_g, y = flipper_length_mm)) +
+  geom_jitter()
+
+ggsave("mass_flip.png")
+```
+
